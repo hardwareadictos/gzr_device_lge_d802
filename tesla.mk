@@ -1,12 +1,13 @@
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/caf_fw.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/d802/d802.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d802
-PRODUCT_NAME := lineage_d802
+PRODUCT_NAME := tesla_d802
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-D802
 PRODUCT_MANUFACTURER := lge
